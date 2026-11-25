@@ -1,0 +1,1765 @@
+{
+  "name": "Multi-Channel AI Agent",
+  "nodes": [
+    {
+      "parameters": {
+        "operation": "appendOrUpdate",
+        "documentId": {
+          "__rl": true,
+          "value": "1Bj9ZHO0HLGfeGWP73C4Ea0XDsRoTUi5MohkOgVhvdkM",
+          "mode": "list",
+          "cachedResultName": "Haven_CRM_Sample_Data",
+          "cachedResultUrl": "https://docs.google.com/spreadsheets/d/1Bj9ZHO0HLGfeGWP73C4Ea0XDsRoTUi5MohkOgVhvdkM/edit?usp=drivesdk"
+        },
+        "sheetName": {
+          "__rl": true,
+          "value": "Customers",
+          "mode": "name"
+        },
+        "columns": {
+          "mappingMode": "defineBelow",
+          "value": {
+            "customer_id": "={{ $json.customer.customer_id }}",
+            "name": "={{ $json.customer.name }}",
+            "email": "={{ $json.customer.email }}",
+            "phone": "={{ $json.customer.phone }}",
+            "discord_id": "={{ $json.customer.discord_id }}",
+            "web_session_id": "={{ $json.customer.web_session_id }}",
+            "channels_used": "={{ $json.customer.channels_used }}",
+            "first_channel": "={{ $json.customer.first_channel }}",
+            "last_channel": "={{ $json.customer.last_channel }}",
+            "transaction_type": "={{ $json.customer.transaction_type }}",
+            "property_type": "={{ $json.customer.property_type }}",
+            "budget": "={{ $json.customer.budget }}",
+            "preferred_neighborhoods": "={{ $json.customer.preferred_neighborhoods }}",
+            "bedrooms": "={{ $json.customer.bedrooms }}",
+            "timeline": "={{ $json.customer.timeline }}",
+            "financing_status": "={{ $json.customer.financing_status }}",
+            "lead_status": "={{ $json.customer.lead_status }}",
+            "lead_score": "={{ $json.customer.lead_score }}",
+            "interested_listings": "={{ $json.customer.interested_listings }}",
+            "assigned_broker": "={{ $json.customer.assigned_broker }}",
+            "conversation_summary": "={{ $json.customer.conversation_summary }}",
+            "created_at": "={{ $json.customer.created_at }}",
+            "last_contact": "={{ $json.customer.last_contact }}"
+          },
+          "matchingColumns": [
+            "customer_id"
+          ],
+          "schema": [
+            {
+              "id": "customer_id",
+              "displayName": "customer_id",
+              "required": false,
+              "defaultMatch": false,
+              "display": true,
+              "type": "string",
+              "canBeUsedToMatch": true
+            },
+            {
+              "id": "name",
+              "displayName": "name",
+              "required": false,
+              "defaultMatch": false,
+              "display": true,
+              "type": "string",
+              "canBeUsedToMatch": true
+            },
+            {
+              "id": "email",
+              "displayName": "email",
+              "required": false,
+              "defaultMatch": false,
+              "display": true,
+              "type": "string",
+              "canBeUsedToMatch": true
+            },
+            {
+              "id": "phone",
+              "displayName": "phone",
+              "required": false,
+              "defaultMatch": false,
+              "display": true,
+              "type": "string",
+              "canBeUsedToMatch": true
+            },
+            {
+              "id": "discord_id",
+              "displayName": "discord_id",
+              "required": false,
+              "defaultMatch": false,
+              "display": true,
+              "type": "string",
+              "canBeUsedToMatch": true
+            },
+            {
+              "id": "web_session_id",
+              "displayName": "web_session_id",
+              "required": false,
+              "defaultMatch": false,
+              "display": true,
+              "type": "string",
+              "canBeUsedToMatch": true
+            },
+            {
+              "id": "channels_used",
+              "displayName": "channels_used",
+              "required": false,
+              "defaultMatch": false,
+              "display": true,
+              "type": "string",
+              "canBeUsedToMatch": true
+            },
+            {
+              "id": "first_channel",
+              "displayName": "first_channel",
+              "required": false,
+              "defaultMatch": false,
+              "display": true,
+              "type": "string",
+              "canBeUsedToMatch": true
+            },
+            {
+              "id": "last_channel",
+              "displayName": "last_channel",
+              "required": false,
+              "defaultMatch": false,
+              "display": true,
+              "type": "string",
+              "canBeUsedToMatch": true
+            },
+            {
+              "id": "transaction_type",
+              "displayName": "transaction_type",
+              "required": false,
+              "defaultMatch": false,
+              "display": true,
+              "type": "string",
+              "canBeUsedToMatch": true
+            },
+            {
+              "id": "property_type",
+              "displayName": "property_type",
+              "required": false,
+              "defaultMatch": false,
+              "display": true,
+              "type": "string",
+              "canBeUsedToMatch": true
+            },
+            {
+              "id": "budget",
+              "displayName": "budget",
+              "required": false,
+              "defaultMatch": false,
+              "display": true,
+              "type": "string",
+              "canBeUsedToMatch": true
+            },
+            {
+              "id": "preferred_neighborhoods",
+              "displayName": "preferred_neighborhoods",
+              "required": false,
+              "defaultMatch": false,
+              "display": true,
+              "type": "string",
+              "canBeUsedToMatch": true
+            },
+            {
+              "id": "bedrooms",
+              "displayName": "bedrooms",
+              "required": false,
+              "defaultMatch": false,
+              "display": true,
+              "type": "string",
+              "canBeUsedToMatch": true
+            },
+            {
+              "id": "timeline",
+              "displayName": "timeline",
+              "required": false,
+              "defaultMatch": false,
+              "display": true,
+              "type": "string",
+              "canBeUsedToMatch": true
+            },
+            {
+              "id": "financing_status",
+              "displayName": "financing_status",
+              "required": false,
+              "defaultMatch": false,
+              "display": true,
+              "type": "string",
+              "canBeUsedToMatch": true
+            },
+            {
+              "id": "lead_status",
+              "displayName": "lead_status",
+              "required": false,
+              "defaultMatch": false,
+              "display": true,
+              "type": "string",
+              "canBeUsedToMatch": true
+            },
+            {
+              "id": "lead_score",
+              "displayName": "lead_score",
+              "required": false,
+              "defaultMatch": false,
+              "display": true,
+              "type": "string",
+              "canBeUsedToMatch": true
+            },
+            {
+              "id": "interested_listings",
+              "displayName": "interested_listings",
+              "required": false,
+              "defaultMatch": false,
+              "display": true,
+              "type": "string",
+              "canBeUsedToMatch": true
+            },
+            {
+              "id": "assigned_broker",
+              "displayName": "assigned_broker",
+              "required": false,
+              "defaultMatch": false,
+              "display": true,
+              "type": "string",
+              "canBeUsedToMatch": true
+            },
+            {
+              "id": "conversation_summary",
+              "displayName": "conversation_summary",
+              "required": false,
+              "defaultMatch": false,
+              "display": true,
+              "type": "string",
+              "canBeUsedToMatch": true
+            },
+            {
+              "id": "created_at",
+              "displayName": "created_at",
+              "required": false,
+              "defaultMatch": false,
+              "display": true,
+              "type": "string",
+              "canBeUsedToMatch": true
+            },
+            {
+              "id": "last_contact",
+              "displayName": "last_contact",
+              "required": false,
+              "defaultMatch": false,
+              "display": true,
+              "type": "string",
+              "canBeUsedToMatch": true
+            }
+          ],
+          "attemptToConvertTypes": false,
+          "convertFieldsToString": false
+        },
+        "options": {}
+      },
+      "type": "n8n-nodes-base.googleSheets",
+      "typeVersion": 4.5,
+      "position": [
+        592,
+        288
+      ],
+      "id": "e2e898ee-9536-419b-9319-fb64171c024a",
+      "name": "Upsert Customer",
+      "credentials": {
+        "googleSheetsOAuth2Api": {
+          "id": "SQOPFNuQ2VTtCWEa",
+          "name": "Google Sheets account 2"
+        }
+      }
+    },
+    {
+      "parameters": {
+        "documentId": {
+          "__rl": true,
+          "value": "1Bj9ZHO0HLGfeGWP73C4Ea0XDsRoTUi5MohkOgVhvdkM",
+          "mode": "list",
+          "cachedResultName": "Haven_CRM_Sample_Data",
+          "cachedResultUrl": "https://docs.google.com/spreadsheets/d/1Bj9ZHO0HLGfeGWP73C4Ea0XDsRoTUi5MohkOgVhvdkM/edit?usp=drivesdk"
+        },
+        "sheetName": {
+          "__rl": true,
+          "value": 197720458,
+          "mode": "list",
+          "cachedResultName": "KnowledgeBase",
+          "cachedResultUrl": "https://docs.google.com/spreadsheets/d/1Bj9ZHO0HLGfeGWP73C4Ea0XDsRoTUi5MohkOgVhvdkM/edit#gid=197720458"
+        },
+        "options": {}
+      },
+      "type": "n8n-nodes-base.googleSheets",
+      "typeVersion": 4.5,
+      "position": [
+        816,
+        432
+      ],
+      "id": "95d8edd2-7da1-4c8b-b2b2-19dd2f5880ce",
+      "name": "Get Knowledge Base",
+      "alwaysOutputData": true,
+      "credentials": {
+        "googleSheetsOAuth2Api": {
+          "id": "SQOPFNuQ2VTtCWEa",
+          "name": "Google Sheets account 2"
+        }
+      }
+    },
+    {
+      "parameters": {
+        "jsCode": "const r = $('Resolve Identity').first().json;\nconst c = r.customer, m = r.message;\n\nconst kb = $input.all().map(i => i.json).filter(k => k.topic && k.content)\n  .map(k => '- ' + k.topic + ': ' + k.content).join('\\n') || '- (no knowledge base entries found)';\nconst v = x => (x === undefined || x === null || String(x).trim() === '') ? 'unknown' : x;\n\nconst systemPrompt = `You are \"Haven Assistant\", the AI assistant of Haven Real Estates (residential sales and rentals). Customers reach you on three channels - website chat, email and Discord - but you are ONE assistant with ONE shared customer record, ONE memory and ONE set of business rules. Never behave like a different bot per channel.\n\nTODAY: ${new Date().toDateString()}\nCURRENT CHANNEL: ${m.channel}\nRETURNING CUSTOMER: ${r.is_new ? 'no (new profile just created)' : 'yes (recognised via ' + r.matched_by + ')'}\n\nSHARED CUSTOMER RECORD (same on every channel):\n- customer_id: ${c.customer_id}\n- name: ${v(c.name)}\n- email: ${c.email ? 'on file' : 'missing'} | phone: ${c.phone ? 'on file' : 'missing'} | discord: ${c.discord_id ? 'linked' : 'not linked'}\n- channels used so far: ${v(c.channels_used)}\n- transaction_type (buy/rent/sell): ${v(c.transaction_type)}\n- property_type: ${v(c.property_type)} | bedrooms: ${v(c.bedrooms)}\n- budget: ${v(c.budget)}\n- preferred_neighborhoods: ${v(c.preferred_neighborhoods)}\n- timeline: ${v(c.timeline)}\n- financing_status: ${v(c.financing_status)}\n- lead_status: ${v(c.lead_status)} | lead_score: ${v(c.lead_score)}\n- interested_listings: ${v(c.interested_listings)}\n- assigned_broker: ${v(c.assigned_broker)}\n- running summary: ${v(c.conversation_summary)}\n\nKNOWLEDGE BASE (your only source of company facts - do not invent policies):\n${kb}\n\nYOUR TOOL\n- \"Search Listings\": returns every row of the Listings sheet. Call it whenever the customer states or changes preferences, or asks about availability or prices. Only recommend rows with status \"Available\" and a listing_type that matches the need (Sale = buying, Rent = renting). Never invent listings, prices, addresses or image links.\n\nGOALS\n1. Understand the request: buy, rent, sell, viewing, general info, complaint.\n2. Qualify the lead naturally with at most 1-2 questions per message. Collect: transaction type, budget, preferred neighborhoods, property type / bedrooms, timeline, financing readiness (buying: pre-approved, cash, needs mortgage help, not sure; renting: ready to apply, needs more time). Never re-ask what is already in the record or in this conversation.\n3. Once you know enough preferences, call Search Listings and present up to 3 best matches. For each: title, neighborhood, price, bedrooms/bathrooms, one or two key features, the listing_id, and the image_url alone on its own line. Then ask which one they like.\n4. If nothing matches, say so honestly and offer the closest alternatives or ask to adjust budget or area.\n5. If email AND phone are both missing, politely ask once for an email or phone number so the conversation can continue on any channel. Do not repeat if they decline.\n6. Hand off to a human broker (handoff_to_broker = true) when: the customer is interested in a specific listing AND budget, neighborhoods, timeline and financing readiness are all known (from the record or this message); OR they ask to speak with a person; OR they ask about commission, legal or tax matters; OR they make a complaint; OR they are ready to make an offer. If a core qualification item is missing, ask for it before handing off. When handing off, tell the customer a broker will contact them within one business day on their preferred channel.\n\nSTYLE\n- website: short and friendly. discord: concise, light formatting allowed. email: slightly longer, with greeting and sign-off \"Haven Real Estates Team\".\n- Reply in the language the customer writes in.\n- Personalise using the record and conversation memory, but never reveal other people's data and never read back full email addresses or phone numbers.\n- Never promise discounts, quote commission, give legal/tax/financial advice, or guarantee availability - a broker confirms everything.\n\nOUTPUT FORMAT - return ONLY one valid JSON object, no markdown fences, no text outside it:\n{\n  \"reply\": \"text sent to the customer. Use \\\\n for line breaks. Put each image URL alone on its own line.\",\n  \"intent\": \"buy | rent | sell | viewing | info | complaint | other\",\n  \"customer_interested\": true | false | null,\n  \"human_requested\": true | false,\n  \"handoff_to_broker\": true | false,\n  \"interested_listing_ids\": [\"listing_ids the customer actually showed interest in - not merely listings you showed\"],\n  \"profile_updates\": {\n    \"name\": null, \"email\": null, \"phone\": null, \"transaction_type\": null, \"property_type\": null,\n    \"budget\": null, \"preferred_neighborhoods\": null, \"bedrooms\": null, \"timeline\": null, \"financing_status\": null\n  },\n  \"conversation_summary\": \"2-3 sentence running summary of the customer's needs and status, merging the previous summary with this message\"\n}\nUse null for anything not learned in this message. In profile_updates put only facts the customer stated.`;\n\nconst chatInput = '[Channel: ' + m.channel + (m.subject ? ' | Email subject: ' + m.subject : '') + ']\\n' + m.message;\nreturn [{ json: { systemPrompt, chatInput, customer: c, message: m } }];"
+      },
+      "type": "n8n-nodes-base.code",
+      "typeVersion": 2,
+      "position": [
+        1040,
+        432
+      ],
+      "id": "06950837-fb5f-4054-bcba-0d3d9c458e36",
+      "name": "Build Agent Context"
+    },
+    {
+      "parameters": {
+        "promptType": "define",
+        "text": "={{ $json.chatInput }}",
+        "options": {
+          "systemMessage": "={{ $json.systemPrompt }}",
+          "maxIterations": 6
+        }
+      },
+      "type": "@n8n/n8n-nodes-langchain.agent",
+      "typeVersion": 1.7,
+      "position": [
+        1328,
+        432
+      ],
+      "id": "0b95b218-ae1a-4dc7-850d-f4d6c1cf4687",
+      "name": "Haven AI Agent",
+      "retryOnFail": true,
+      "maxTries": 2,
+      "waitBetweenTries": 3000
+    },
+    {
+      "parameters": {
+        "modelName": "models/gemini-3.5-flash-lite",
+        "options": {
+          "temperature": 0.4
+        }
+      },
+      "type": "@n8n/n8n-nodes-langchain.lmChatGoogleGemini",
+      "typeVersion": 1,
+      "position": [
+        1280,
+        672
+      ],
+      "id": "f50b93de-69cb-4d88-8048-89a70e979c91",
+      "name": "Gemini Chat Model",
+      "credentials": {
+        "googlePalmApi": {
+          "id": "ikloTnFHJ0wcqT6Y",
+          "name": "Google Gemini(PaLM) Api account"
+        }
+      }
+    },
+    {
+      "parameters": {
+        "sessionIdType": "customKey",
+        "sessionKey": "={{ $('Resolve Identity').first().json.customer.customer_id }}",
+        "contextWindowLength": 12
+      },
+      "type": "@n8n/n8n-nodes-langchain.memoryBufferWindow",
+      "typeVersion": 1.3,
+      "position": [
+        1408,
+        672
+      ],
+      "id": "ffce83a5-2ef4-439d-827f-9079ffee2b7c",
+      "name": "Customer Memory"
+    },
+    {
+      "parameters": {
+        "documentId": {
+          "__rl": true,
+          "value": "1Bj9ZHO0HLGfeGWP73C4Ea0XDsRoTUi5MohkOgVhvdkM",
+          "mode": "list",
+          "cachedResultName": "Haven_CRM_Sample_Data",
+          "cachedResultUrl": "https://docs.google.com/spreadsheets/d/1Bj9ZHO0HLGfeGWP73C4Ea0XDsRoTUi5MohkOgVhvdkM/edit?usp=drivesdk"
+        },
+        "sheetName": {
+          "__rl": true,
+          "value": 1726182812,
+          "mode": "list",
+          "cachedResultName": "Listings",
+          "cachedResultUrl": "https://docs.google.com/spreadsheets/d/1Bj9ZHO0HLGfeGWP73C4Ea0XDsRoTUi5MohkOgVhvdkM/edit#gid=1726182812"
+        },
+        "options": {}
+      },
+      "type": "n8n-nodes-base.googleSheetsTool",
+      "typeVersion": 4.5,
+      "position": [
+        1536,
+        672
+      ],
+      "id": "801e3fb7-6412-4c53-a8be-51d9c7c39587",
+      "name": "Search Listings",
+      "credentials": {
+        "googleSheetsOAuth2Api": {
+          "id": "SQOPFNuQ2VTtCWEa",
+          "name": "Google Sheets account 2"
+        }
+      }
+    },
+    {
+      "parameters": {
+        "jsCode": "const ctx = $('Build Agent Context').first().json;\nconst c = { ...ctx.customer };\nconst m = ctx.message;\nconst now = new Date().toISOString();\n\n// ---- 1. parse Gemini's JSON (tolerate code fences / stray text) ----\nlet raw = $input.first().json.output;\nif (raw && typeof raw === 'object') raw = JSON.stringify(raw);\nraw = (raw || '').toString();\nlet p;\ntry {\n  const cleaned = raw.replace(/```json|```/gi, '').trim();\n  p = JSON.parse(cleaned.slice(cleaned.indexOf('{'), cleaned.lastIndexOf('}') + 1));\n} catch (e) {\n  p = { reply: raw.trim() || 'Thanks for your message! A member of the Haven team will get back to you shortly.', intent: 'other', profile_updates: {} };\n}\n\n// ---- 2. apply profile updates (email/phone only fill blanks) ----\nconst up = p.profile_updates || {};\nconst fields = ['name','email','phone','transaction_type','property_type','budget','preferred_neighborhoods','bedrooms','timeline','financing_status'];\nfor (const f of fields) {\n  let val = up[f];\n  if (Array.isArray(val)) val = val.join(', ');\n  if (val === null || val === undefined || String(val).trim() === '' || /^unknown$/i.test(String(val))) continue;\n  if ((f === 'email' || f === 'phone') && String(c[f] || '').trim() !== '') continue;\n  c[f] = String(val).trim();\n}\nif (c.email) c.email = c.email.toLowerCase();\n\nconst ids = (Array.isArray(p.interested_listing_ids) ? p.interested_listing_ids : []).map(String);\nif (ids.length) {\n  const s = new Set(String(c.interested_listings || '').split(',').map(x => x.trim()).filter(Boolean));\n  ids.forEach(i => s.add(i));\n  c.interested_listings = [...s].join(', ');\n}\nif (p.conversation_summary) c.conversation_summary = String(p.conversation_summary).slice(0, 600);\n\n// ---- 3. central business logic: scoring, status, handoff ----\nconst core = ['budget', 'preferred_neighborhoods', 'timeline', 'financing_status'];\nconst known = core.filter(f => String(c[f] || '').trim() !== '').length;\nconst interested = p.customer_interested === true || String(c.interested_listings || '').trim() !== '';\nconst score = Math.min(100, known * 20 + (String(c.transaction_type || '').trim() ? 10 : 0) + (interested ? 10 : 0));\n\nconst prevStatus = String(ctx.customer.lead_status || 'New');\nconst alreadyHot = /^Hot/i.test(prevStatus);\nconst reachable = c.email || c.phone || c.discord_id;\nlet handoff = (p.handoff_to_broker === true && !alreadyHot) || p.human_requested === true;\n\nlet status = prevStatus;\nif (handoff) status = 'Hot Lead - Broker Handoff';\nelse if (!alreadyHot) status = known >= 3 ? 'Warm' : (known >= 1 ? 'Qualifying' : 'New');\nif (handoff && !c.assigned_broker) c.assigned_broker = 'Pending - Human Broker';\nc.lead_status = status;\nc.lead_score = score;\n\n// ---- 4. format the reply for each channel ----\nlet reply = (p.reply || '').toString().trim() || 'Thanks for reaching out to Haven Real Estates! How can I help you today?';\nif (handoff && !reachable) reply += '\\n\\nSo our broker can reach you, please share your email address or phone number.';\nconst imgRe = /https?:\\/\\/[^\\s)<>\"']+\\.(?:png|jpe?g|webp|gif)(?:\\?[^\\s)<>\"']*)?/gi;\nconst images = [...new Set(reply.match(imgRe) || [])];\nconst replyWebsite = reply.replace(imgRe, '').replace(/\\n{3,}/g, '\\n\\n').trim();\n\nconst esc = s => s.replace(/&/g, '&amp;').replace(/</g, '&lt;').replace(/>/g, '&gt;');\nconst toHtml = text => text.split('\\n').map(line => esc(line).replace(/https?:\\/\\/[^\\s<]+/g, u => {\n  const clean = u.replace(/[.,;)]+$/, ''), tail = u.slice(clean.length);\n  return (/\\.(png|jpe?g|webp|gif)(\\?|$)/i.test(clean)\n    ? '<br><img src=\"' + clean + '\" width=\"480\" style=\"max-width:100%;border-radius:8px;margin:6px 0\"><br>'\n    : '<a href=\"' + clean + '\">' + clean + '</a>') + tail;\n})).join('<br>');\nconst replyHtml = '<div style=\"font-family:Arial,sans-serif;font-size:14px;line-height:1.5\">' + toHtml(reply) + '</div>';\n\nconst contact = c.email || c.phone || (c.discord_id ? 'Discord ID ' + c.discord_id : 'Not provided (website session ' + (c.web_session_id || 'unknown') + ')');\nconst brokerSubject = '[Haven Broker Alert] Hot lead: ' + (c.name || c.customer_id) + ' (' + score + '/100)';\nconst brokerHtml = '<div style=\"font-family:Arial,sans-serif;font-size:14px;line-height:1.6\">'\n  + '<h3>New qualified lead for Haven Real Estates</h3>'\n  + '<table cellpadding=\"4\">'\n  + '<tr><td><b>Customer</b></td><td>' + esc(c.name || '(name not given)') + ' (' + c.customer_id + ')</td></tr>'\n  + '<tr><td><b>Contact</b></td><td>' + esc(String(contact)) + '</td></tr>'\n  + '<tr><td><b>Channels used</b></td><td>' + esc(c.channels_used) + ' (latest: ' + m.channel + ')</td></tr>'\n  + '<tr><td><b>Wants</b></td><td>' + esc(c.transaction_type || '-') + ', ' + esc(c.property_type || '-') + ', ' + esc(String(c.bedrooms || '-')) + ' bed</td></tr>'\n  + '<tr><td><b>Budget</b></td><td>' + esc(String(c.budget || '-')) + '</td></tr>'\n  + '<tr><td><b>Neighborhoods</b></td><td>' + esc(c.preferred_neighborhoods || '-') + '</td></tr>'\n  + '<tr><td><b>Timeline</b></td><td>' + esc(c.timeline || '-') + '</td></tr>'\n  + '<tr><td><b>Financing</b></td><td>' + esc(c.financing_status || '-') + '</td></tr>'\n  + '<tr><td><b>Interested in</b></td><td>' + esc(c.interested_listings || '-') + '</td></tr>'\n  + '<tr><td><b>Lead score</b></td><td>' + score + '/100</td></tr>'\n  + '<tr><td><b>Summary</b></td><td>' + esc(c.conversation_summary || '-') + '</td></tr>'\n  + '<tr><td><b>Last message</b></td><td>' + esc(m.message) + '</td></tr></table></div>';\n\nconst subject = m.subject ? (/^re:/i.test(m.subject) ? m.subject : 'Re: ' + m.subject) : 'Re: Your Haven Real Estates enquiry';\n\nreturn [{ json: {\n  customer_id: c.customer_id,\n  channel: m.channel,\n  reply,\n  reply_website: replyWebsite,\n  reply_html: replyHtml,\n  images,\n  subject,\n  reply_ref: m.reply_ref,\n  email_message_id: m.email_message_id,\n  intent: p.intent || 'other',\n  profile: c,\n  handoff,\n  broker_subject: brokerSubject,\n  broker_html: brokerHtml,\n  conversation: { timestamp: now, customer_id: c.customer_id, channel: m.channel, customer_message: m.message, ai_reply: reply, intent: p.intent || 'other', lead_status: status },\n  handoff_row: { timestamp: now, customer_id: c.customer_id, name: c.name || '', contact: String(contact), channel: m.channel, lead_score: score,\n    budget: c.budget || '', preferred_neighborhoods: c.preferred_neighborhoods || '', timeline: c.timeline || '', financing_status: c.financing_status || '',\n    interested_listings: c.interested_listings || '', summary: c.conversation_summary || '', status: 'Pending' }\n}}];"
+      },
+      "type": "n8n-nodes-base.code",
+      "typeVersion": 2,
+      "position": [
+        1728,
+        432
+      ],
+      "id": "165b68e4-62cf-47cf-ae81-78b60e10055b",
+      "name": "Parse AI Output"
+    },
+    {
+      "parameters": {
+        "operation": "appendOrUpdate",
+        "documentId": {
+          "__rl": true,
+          "value": "1Bj9ZHO0HLGfeGWP73C4Ea0XDsRoTUi5MohkOgVhvdkM",
+          "mode": "list",
+          "cachedResultName": "Haven_CRM_Sample_Data",
+          "cachedResultUrl": "https://docs.google.com/spreadsheets/d/1Bj9ZHO0HLGfeGWP73C4Ea0XDsRoTUi5MohkOgVhvdkM/edit?usp=drivesdk"
+        },
+        "sheetName": {
+          "__rl": true,
+          "value": "Customers",
+          "mode": "name"
+        },
+        "columns": {
+          "mappingMode": "defineBelow",
+          "value": {
+            "customer_id": "={{ $json.profile.customer_id }}",
+            "name": "={{ $json.profile.name }}",
+            "email": "={{ $json.profile.email }}",
+            "phone": "={{ $json.profile.phone }}",
+            "discord_id": "={{ $json.profile.discord_id }}",
+            "web_session_id": "={{ $json.profile.web_session_id }}",
+            "channels_used": "={{ $json.profile.channels_used }}",
+            "first_channel": "={{ $json.profile.first_channel }}",
+            "last_channel": "={{ $json.profile.last_channel }}",
+            "transaction_type": "={{ $json.profile.transaction_type }}",
+            "property_type": "={{ $json.profile.property_type }}",
+            "budget": "={{ $json.profile.budget }}",
+            "preferred_neighborhoods": "={{ $json.profile.preferred_neighborhoods }}",
+            "bedrooms": "={{ $json.profile.bedrooms }}",
+            "timeline": "={{ $json.profile.timeline }}",
+            "financing_status": "={{ $json.profile.financing_status }}",
+            "lead_status": "={{ $json.profile.lead_status }}",
+            "lead_score": "={{ $json.profile.lead_score }}",
+            "interested_listings": "={{ $json.profile.interested_listings }}",
+            "assigned_broker": "={{ $json.profile.assigned_broker }}",
+            "conversation_summary": "={{ $json.profile.conversation_summary }}",
+            "created_at": "={{ $json.profile.created_at }}",
+            "last_contact": "={{ $json.profile.last_contact }}"
+          },
+          "matchingColumns": [
+            "customer_id"
+          ],
+          "schema": [
+            {
+              "id": "customer_id",
+              "displayName": "customer_id",
+              "required": false,
+              "defaultMatch": false,
+              "display": true,
+              "type": "string",
+              "canBeUsedToMatch": true
+            },
+            {
+              "id": "name",
+              "displayName": "name",
+              "required": false,
+              "defaultMatch": false,
+              "display": true,
+              "type": "string",
+              "canBeUsedToMatch": true
+            },
+            {
+              "id": "email",
+              "displayName": "email",
+              "required": false,
+              "defaultMatch": false,
+              "display": true,
+              "type": "string",
+              "canBeUsedToMatch": true
+            },
+            {
+              "id": "phone",
+              "displayName": "phone",
+              "required": false,
+              "defaultMatch": false,
+              "display": true,
+              "type": "string",
+              "canBeUsedToMatch": true
+            },
+            {
+              "id": "discord_id",
+              "displayName": "discord_id",
+              "required": false,
+              "defaultMatch": false,
+              "display": true,
+              "type": "string",
+              "canBeUsedToMatch": true
+            },
+            {
+              "id": "web_session_id",
+              "displayName": "web_session_id",
+              "required": false,
+              "defaultMatch": false,
+              "display": true,
+              "type": "string",
+              "canBeUsedToMatch": true
+            },
+            {
+              "id": "channels_used",
+              "displayName": "channels_used",
+              "required": false,
+              "defaultMatch": false,
+              "display": true,
+              "type": "string",
+              "canBeUsedToMatch": true
+            },
+            {
+              "id": "first_channel",
+              "displayName": "first_channel",
+              "required": false,
+              "defaultMatch": false,
+              "display": true,
+              "type": "string",
+              "canBeUsedToMatch": true
+            },
+            {
+              "id": "last_channel",
+              "displayName": "last_channel",
+              "required": false,
+              "defaultMatch": false,
+              "display": true,
+              "type": "string",
+              "canBeUsedToMatch": true
+            },
+            {
+              "id": "transaction_type",
+              "displayName": "transaction_type",
+              "required": false,
+              "defaultMatch": false,
+              "display": true,
+              "type": "string",
+              "canBeUsedToMatch": true
+            },
+            {
+              "id": "property_type",
+              "displayName": "property_type",
+              "required": false,
+              "defaultMatch": false,
+              "display": true,
+              "type": "string",
+              "canBeUsedToMatch": true
+            },
+            {
+              "id": "budget",
+              "displayName": "budget",
+              "required": false,
+              "defaultMatch": false,
+              "display": true,
+              "type": "string",
+              "canBeUsedToMatch": true
+            },
+            {
+              "id": "preferred_neighborhoods",
+              "displayName": "preferred_neighborhoods",
+              "required": false,
+              "defaultMatch": false,
+              "display": true,
+              "type": "string",
+              "canBeUsedToMatch": true
+            },
+            {
+              "id": "bedrooms",
+              "displayName": "bedrooms",
+              "required": false,
+              "defaultMatch": false,
+              "display": true,
+              "type": "string",
+              "canBeUsedToMatch": true
+            },
+            {
+              "id": "timeline",
+              "displayName": "timeline",
+              "required": false,
+              "defaultMatch": false,
+              "display": true,
+              "type": "string",
+              "canBeUsedToMatch": true
+            },
+            {
+              "id": "financing_status",
+              "displayName": "financing_status",
+              "required": false,
+              "defaultMatch": false,
+              "display": true,
+              "type": "string",
+              "canBeUsedToMatch": true
+            },
+            {
+              "id": "lead_status",
+              "displayName": "lead_status",
+              "required": false,
+              "defaultMatch": false,
+              "display": true,
+              "type": "string",
+              "canBeUsedToMatch": true
+            },
+            {
+              "id": "lead_score",
+              "displayName": "lead_score",
+              "required": false,
+              "defaultMatch": false,
+              "display": true,
+              "type": "string",
+              "canBeUsedToMatch": true
+            },
+            {
+              "id": "interested_listings",
+              "displayName": "interested_listings",
+              "required": false,
+              "defaultMatch": false,
+              "display": true,
+              "type": "string",
+              "canBeUsedToMatch": true
+            },
+            {
+              "id": "assigned_broker",
+              "displayName": "assigned_broker",
+              "required": false,
+              "defaultMatch": false,
+              "display": true,
+              "type": "string",
+              "canBeUsedToMatch": true
+            },
+            {
+              "id": "conversation_summary",
+              "displayName": "conversation_summary",
+              "required": false,
+              "defaultMatch": false,
+              "display": true,
+              "type": "string",
+              "canBeUsedToMatch": true
+            },
+            {
+              "id": "created_at",
+              "displayName": "created_at",
+              "required": false,
+              "defaultMatch": false,
+              "display": true,
+              "type": "string",
+              "canBeUsedToMatch": true
+            },
+            {
+              "id": "last_contact",
+              "displayName": "last_contact",
+              "required": false,
+              "defaultMatch": false,
+              "display": true,
+              "type": "string",
+              "canBeUsedToMatch": true
+            }
+          ],
+          "attemptToConvertTypes": false,
+          "convertFieldsToString": false
+        },
+        "options": {}
+      },
+      "type": "n8n-nodes-base.googleSheets",
+      "typeVersion": 4.5,
+      "position": [
+        1952,
+        336
+      ],
+      "id": "e04a47a3-d643-4db4-93fd-93b4a70a6f73",
+      "name": "Update Customer Profile",
+      "credentials": {
+        "googleSheetsOAuth2Api": {
+          "id": "SQOPFNuQ2VTtCWEa",
+          "name": "Google Sheets account 2"
+        }
+      },
+      "onError": "continueRegularOutput"
+    },
+    {
+      "parameters": {
+        "operation": "append",
+        "documentId": {
+          "__rl": true,
+          "value": "1Bj9ZHO0HLGfeGWP73C4Ea0XDsRoTUi5MohkOgVhvdkM",
+          "mode": "list",
+          "cachedResultName": "Haven_CRM_Sample_Data",
+          "cachedResultUrl": "https://docs.google.com/spreadsheets/d/1Bj9ZHO0HLGfeGWP73C4Ea0XDsRoTUi5MohkOgVhvdkM/edit?usp=drivesdk"
+        },
+        "sheetName": {
+          "__rl": true,
+          "value": "Conversations",
+          "mode": "name"
+        },
+        "columns": {
+          "mappingMode": "defineBelow",
+          "value": {
+            "timestamp": "={{ $('Parse AI Output').first().json.conversation.timestamp }}",
+            "customer_id": "={{ $('Parse AI Output').first().json.conversation.customer_id }}",
+            "channel": "={{ $('Parse AI Output').first().json.conversation.channel }}",
+            "customer_message": "={{ $('Parse AI Output').first().json.conversation.customer_message }}",
+            "ai_reply": "={{ $('Parse AI Output').first().json.conversation.ai_reply }}",
+            "intent": "={{ $('Parse AI Output').first().json.conversation.intent }}",
+            "lead_status": "={{ $('Parse AI Output').first().json.conversation.lead_status }}"
+          },
+          "matchingColumns": [],
+          "schema": [
+            {
+              "id": "timestamp",
+              "displayName": "timestamp",
+              "required": false,
+              "defaultMatch": false,
+              "display": true,
+              "type": "string",
+              "canBeUsedToMatch": true
+            },
+            {
+              "id": "customer_id",
+              "displayName": "customer_id",
+              "required": false,
+              "defaultMatch": false,
+              "display": true,
+              "type": "string",
+              "canBeUsedToMatch": true
+            },
+            {
+              "id": "channel",
+              "displayName": "channel",
+              "required": false,
+              "defaultMatch": false,
+              "display": true,
+              "type": "string",
+              "canBeUsedToMatch": true
+            },
+            {
+              "id": "customer_message",
+              "displayName": "customer_message",
+              "required": false,
+              "defaultMatch": false,
+              "display": true,
+              "type": "string",
+              "canBeUsedToMatch": true
+            },
+            {
+              "id": "ai_reply",
+              "displayName": "ai_reply",
+              "required": false,
+              "defaultMatch": false,
+              "display": true,
+              "type": "string",
+              "canBeUsedToMatch": true
+            },
+            {
+              "id": "intent",
+              "displayName": "intent",
+              "required": false,
+              "defaultMatch": false,
+              "display": true,
+              "type": "string",
+              "canBeUsedToMatch": true
+            },
+            {
+              "id": "lead_status",
+              "displayName": "lead_status",
+              "required": false,
+              "defaultMatch": false,
+              "display": true,
+              "type": "string",
+              "canBeUsedToMatch": true
+            }
+          ],
+          "attemptToConvertTypes": false,
+          "convertFieldsToString": false
+        },
+        "options": {}
+      },
+      "type": "n8n-nodes-base.googleSheets",
+      "typeVersion": 4.5,
+      "position": [
+        2176,
+        336
+      ],
+      "id": "e0969c7e-28d0-4924-94a8-2befbf93d0db",
+      "name": "Log Conversation",
+      "credentials": {
+        "googleSheetsOAuth2Api": {
+          "id": "SQOPFNuQ2VTtCWEa",
+          "name": "Google Sheets account 2"
+        }
+      },
+      "onError": "continueRegularOutput"
+    },
+    {
+      "parameters": {
+        "rules": {
+          "values": [
+            {
+              "conditions": {
+                "options": {
+                  "caseSensitive": true,
+                  "leftValue": "",
+                  "typeValidation": "strict",
+                  "version": 2
+                },
+                "conditions": [
+                  {
+                    "id": "6eb36b6e-d7c0-4883-a2b8-c8c4db77c5ee",
+                    "leftValue": "={{ $('Parse AI Output').first().json.channel }}",
+                    "rightValue": "website",
+                    "operator": {
+                      "type": "string",
+                      "operation": "equals"
+                    }
+                  }
+                ],
+                "combinator": "and"
+              }
+            },
+            {
+              "conditions": {
+                "options": {
+                  "caseSensitive": true,
+                  "leftValue": "",
+                  "typeValidation": "strict",
+                  "version": 2
+                },
+                "conditions": [
+                  {
+                    "id": "6b029274-6074-4492-bee7-edb8681f7485",
+                    "leftValue": "={{ $('Parse AI Output').first().json.channel }}",
+                    "rightValue": "email",
+                    "operator": {
+                      "type": "string",
+                      "operation": "equals"
+                    }
+                  }
+                ],
+                "combinator": "and"
+              }
+            },
+            {
+              "conditions": {
+                "options": {
+                  "caseSensitive": true,
+                  "leftValue": "",
+                  "typeValidation": "strict",
+                  "version": 2
+                },
+                "conditions": [
+                  {
+                    "id": "97b12690-499b-4483-8d10-44b2959cb60b",
+                    "leftValue": "={{ $('Parse AI Output').first().json.channel }}",
+                    "rightValue": "discord",
+                    "operator": {
+                      "type": "string",
+                      "operation": "equals"
+                    }
+                  }
+                ],
+                "combinator": "and"
+              }
+            }
+          ]
+        },
+        "options": {}
+      },
+      "type": "n8n-nodes-base.switch",
+      "typeVersion": 3.2,
+      "position": [
+        2400,
+        320
+      ],
+      "id": "356df872-c819-4e1a-9007-2d4b21e21324",
+      "name": "Route by Channel"
+    },
+    {
+      "parameters": {
+        "respondWith": "json",
+        "responseBody": "={{ { reply: $('Parse AI Output').first().json.reply_website, images: $('Parse AI Output').first().json.images, customer_id: $('Parse AI Output').first().json.customer_id } }}",
+        "options": {}
+      },
+      "type": "n8n-nodes-base.respondToWebhook",
+      "typeVersion": 1.1,
+      "position": [
+        2624,
+        144
+      ],
+      "id": "bec7fca2-2d85-4a0c-91aa-7e44573d4213",
+      "name": "Respond Website"
+    },
+    {
+      "parameters": {
+        "operation": "reply",
+        "messageId": "={{ $('Parse AI Output').first().json.email_message_id }}",
+        "message": "={{ $('Parse AI Output').first().json.reply_html }}",
+        "options": {}
+      },
+      "type": "n8n-nodes-base.gmail",
+      "typeVersion": 2.1,
+      "position": [
+        2624,
+        336
+      ],
+      "id": "d365cbd1-cd4b-4bd2-9b14-e873a5f999d1",
+      "name": "Send Email Reply",
+      "webhookId": "6fb0217c-90fd-42f0-9c6b-b35b513ead6b",
+      "credentials": {
+        "gmailOAuth2": {
+          "id": "N4Yfk3DMaIceXkvl",
+          "name": "Gmail account 2"
+        }
+      }
+    },
+    {
+      "parameters": {
+        "respondWith": "json",
+        "responseBody": "={{ { reply: $('Parse AI Output').first().json.reply, images: $('Parse AI Output').first().json.images, customer_id: $('Parse AI Output').first().json.customer_id } }}",
+        "options": {}
+      },
+      "type": "n8n-nodes-base.respondToWebhook",
+      "typeVersion": 1.1,
+      "position": [
+        2624,
+        528
+      ],
+      "id": "e9e599e6-89e7-4151-8b2d-a3c8972014b2",
+      "name": "Respond Discord"
+    },
+    {
+      "parameters": {
+        "conditions": {
+          "options": {
+            "caseSensitive": true,
+            "leftValue": "",
+            "typeValidation": "strict",
+            "version": 2
+          },
+          "conditions": [
+            {
+              "id": "8657b924-2484-4756-ab4a-d2de3a9194e3",
+              "leftValue": "={{ $json.handoff }}",
+              "rightValue": "",
+              "operator": {
+                "type": "boolean",
+                "operation": "true",
+                "singleValue": true
+              }
+            }
+          ],
+          "combinator": "and"
+        },
+        "options": {}
+      },
+      "type": "n8n-nodes-base.if",
+      "typeVersion": 2.2,
+      "position": [
+        1952,
+        544
+      ],
+      "id": "9360e337-3035-4e4b-8953-030f10c4bd90",
+      "name": "Needs Broker?"
+    },
+    {
+      "parameters": {
+        "operation": "append",
+        "documentId": {
+          "__rl": true,
+          "value": "1Bj9ZHO0HLGfeGWP73C4Ea0XDsRoTUi5MohkOgVhvdkM",
+          "mode": "list",
+          "cachedResultName": "Haven_CRM_Sample_Data",
+          "cachedResultUrl": "https://docs.google.com/spreadsheets/d/1Bj9ZHO0HLGfeGWP73C4Ea0XDsRoTUi5MohkOgVhvdkM/edit?usp=drivesdk"
+        },
+        "sheetName": {
+          "__rl": true,
+          "value": "Handoffs",
+          "mode": "name"
+        },
+        "columns": {
+          "mappingMode": "defineBelow",
+          "value": {
+            "timestamp": "={{ $('Parse AI Output').first().json.handoff_row.timestamp }}",
+            "customer_id": "={{ $('Parse AI Output').first().json.handoff_row.customer_id }}",
+            "name": "={{ $('Parse AI Output').first().json.handoff_row.name }}",
+            "contact": "={{ $('Parse AI Output').first().json.handoff_row.contact }}",
+            "channel": "={{ $('Parse AI Output').first().json.handoff_row.channel }}",
+            "lead_score": "={{ $('Parse AI Output').first().json.handoff_row.lead_score }}",
+            "budget": "={{ $('Parse AI Output').first().json.handoff_row.budget }}",
+            "preferred_neighborhoods": "={{ $('Parse AI Output').first().json.handoff_row.preferred_neighborhoods }}",
+            "timeline": "={{ $('Parse AI Output').first().json.handoff_row.timeline }}",
+            "financing_status": "={{ $('Parse AI Output').first().json.handoff_row.financing_status }}",
+            "interested_listings": "={{ $('Parse AI Output').first().json.handoff_row.interested_listings }}",
+            "summary": "={{ $('Parse AI Output').first().json.handoff_row.summary }}",
+            "status": "={{ $('Parse AI Output').first().json.handoff_row.status }}"
+          },
+          "matchingColumns": [],
+          "schema": [
+            {
+              "id": "timestamp",
+              "displayName": "timestamp",
+              "required": false,
+              "defaultMatch": false,
+              "display": true,
+              "type": "string",
+              "canBeUsedToMatch": true
+            },
+            {
+              "id": "customer_id",
+              "displayName": "customer_id",
+              "required": false,
+              "defaultMatch": false,
+              "display": true,
+              "type": "string",
+              "canBeUsedToMatch": true
+            },
+            {
+              "id": "name",
+              "displayName": "name",
+              "required": false,
+              "defaultMatch": false,
+              "display": true,
+              "type": "string",
+              "canBeUsedToMatch": true
+            },
+            {
+              "id": "contact",
+              "displayName": "contact",
+              "required": false,
+              "defaultMatch": false,
+              "display": true,
+              "type": "string",
+              "canBeUsedToMatch": true
+            },
+            {
+              "id": "channel",
+              "displayName": "channel",
+              "required": false,
+              "defaultMatch": false,
+              "display": true,
+              "type": "string",
+              "canBeUsedToMatch": true
+            },
+            {
+              "id": "lead_score",
+              "displayName": "lead_score",
+              "required": false,
+              "defaultMatch": false,
+              "display": true,
+              "type": "string",
+              "canBeUsedToMatch": true
+            },
+            {
+              "id": "budget",
+              "displayName": "budget",
+              "required": false,
+              "defaultMatch": false,
+              "display": true,
+              "type": "string",
+              "canBeUsedToMatch": true
+            },
+            {
+              "id": "preferred_neighborhoods",
+              "displayName": "preferred_neighborhoods",
+              "required": false,
+              "defaultMatch": false,
+              "display": true,
+              "type": "string",
+              "canBeUsedToMatch": true
+            },
+            {
+              "id": "timeline",
+              "displayName": "timeline",
+              "required": false,
+              "defaultMatch": false,
+              "display": true,
+              "type": "string",
+              "canBeUsedToMatch": true
+            },
+            {
+              "id": "financing_status",
+              "displayName": "financing_status",
+              "required": false,
+              "defaultMatch": false,
+              "display": true,
+              "type": "string",
+              "canBeUsedToMatch": true
+            },
+            {
+              "id": "interested_listings",
+              "displayName": "interested_listings",
+              "required": false,
+              "defaultMatch": false,
+              "display": true,
+              "type": "string",
+              "canBeUsedToMatch": true
+            },
+            {
+              "id": "summary",
+              "displayName": "summary",
+              "required": false,
+              "defaultMatch": false,
+              "display": true,
+              "type": "string",
+              "canBeUsedToMatch": true
+            },
+            {
+              "id": "status",
+              "displayName": "status",
+              "required": false,
+              "defaultMatch": false,
+              "display": true,
+              "type": "string",
+              "canBeUsedToMatch": true
+            }
+          ],
+          "attemptToConvertTypes": false,
+          "convertFieldsToString": false
+        },
+        "options": {}
+      },
+      "type": "n8n-nodes-base.googleSheets",
+      "typeVersion": 4.5,
+      "position": [
+        2176,
+        544
+      ],
+      "id": "669da931-42b9-4529-9b58-5f55d89a244f",
+      "name": "Log Handoff",
+      "credentials": {
+        "googleSheetsOAuth2Api": {
+          "id": "SQOPFNuQ2VTtCWEa",
+          "name": "Google Sheets account 2"
+        }
+      },
+      "onError": "continueRegularOutput"
+    },
+    {
+      "parameters": {
+        "sendTo": "azka.sheikh07@gmail.com",
+        "subject": "={{ $('Parse AI Output').first().json.broker_subject }}",
+        "message": "={{ $('Parse AI Output').first().json.broker_html }}",
+        "options": {
+          "appendAttribution": false
+        }
+      },
+      "type": "n8n-nodes-base.gmail",
+      "typeVersion": 2.1,
+      "position": [
+        2400,
+        544
+      ],
+      "id": "19d102dc-232f-46bf-b150-11ccf35684a6",
+      "name": "Notify Broker",
+      "webhookId": "dc346ca5-9e1f-465f-87ef-13b9cf453fe0",
+      "credentials": {
+        "gmailOAuth2": {
+          "id": "N4Yfk3DMaIceXkvl",
+          "name": "Gmail account 2"
+        }
+      }
+    },
+    {
+      "parameters": {
+        "httpMethod": "POST",
+        "path": "haven-website-chat",
+        "responseMode": "responseNode",
+        "options": {
+          "allowedOrigins": "*"
+        }
+      },
+      "type": "n8n-nodes-base.webhook",
+      "typeVersion": 2,
+      "position": [
+        -528,
+        96
+      ],
+      "id": "39457b20-3649-40e9-ab15-98751d4ae658",
+      "name": "Website Chat Webhook",
+      "webhookId": "9e67b0fb-1ea2-4dd7-9aa0-b7c7a2b55269"
+    },
+    {
+      "parameters": {
+        "pollTimes": {
+          "item": [
+            {
+              "mode": "everyMinute"
+            }
+          ]
+        },
+        "simple": false,
+        "filters": {
+          "labelIds": [
+            "INBOX"
+          ],
+          "readStatus": "unread"
+        },
+        "options": {}
+      },
+      "type": "n8n-nodes-base.gmailTrigger",
+      "typeVersion": 1.2,
+      "position": [
+        -528,
+        288
+      ],
+      "id": "7ffe56cd-0ea5-44c0-adb5-98845d0aa25f",
+      "name": "Email Trigger (Gmail)",
+      "credentials": {
+        "gmailOAuth2": {
+          "id": "N4Yfk3DMaIceXkvl",
+          "name": "Gmail account 2"
+        }
+      }
+    },
+    {
+      "parameters": {
+        "httpMethod": "POST",
+        "path": "haven-discord",
+        "responseMode": "responseNode",
+        "options": {}
+      },
+      "type": "n8n-nodes-base.webhook",
+      "typeVersion": 2,
+      "position": [
+        -528,
+        480
+      ],
+      "id": "9f65e004-f2ee-42f7-af01-eb3d9b2f80b2",
+      "name": "Discord Webhook",
+      "webhookId": "3efcbaf7-0e53-47e5-9726-78e89652e050"
+    },
+    {
+      "parameters": {
+        "jsCode": "const b = $input.first().json.body || {};\nconst text = (b.message || '').toString().trim() || '(customer opened the chat without typing a message)';\nreturn [{ json: {\n  channel: 'website',\n  message: text.slice(0, 4000),\n  name: (b.name || '').toString().trim(),\n  email: (b.email || '').toString().trim().toLowerCase(),\n  phone: (b.phone || '').toString().trim(),\n  discord_id: '',\n  subject: '',\n  reply_ref: (b.session_id || '').toString(),\n  email_message_id: '',\n  received_at: new Date().toISOString()\n}}];"
+      },
+      "type": "n8n-nodes-base.code",
+      "typeVersion": 2,
+      "position": [
+        -304,
+        96
+      ],
+      "id": "7b1bcd5a-24d2-4da8-a132-5ddc93631a8b",
+      "name": "Normalize Website"
+    },
+    {
+      "parameters": {
+        "jsCode": "const out = [];\nfor (const it of $input.all()) {\n  const j = it.json;\n  let addr = '', name = '';\n  if (j.from && j.from.value && j.from.value[0]) {\n    addr = j.from.value[0].address || '';\n    name = j.from.value[0].name || '';\n  } else if (typeof j.From === 'string') {\n    const m = j.From.match(/^(.*?)<([^>]+)>/);\n    if (m) { name = m[1].replace(/[\"']/g, '').trim(); addr = m[2]; } else { addr = j.From.trim(); }\n  }\n  addr = addr.toLowerCase();\n  const subject = j.subject || j.Subject || '';\n  // ignore automated mail and our own broker alerts (prevents loops)\n  if (!addr || /no-?reply|mailer-daemon|notifications?@/.test(addr)) continue;\n  if (/^\\[Haven Broker Alert\\]/i.test(subject)) continue;\n  let body = (j.text || j.textPlain || j.snippet || '').toString();\n  body = body.split(/\\r?\\nOn .{0,120}wrote:/)[0].split(/\\r?\\n>/)[0].trim();   // drop quoted history\n  if (!body) continue;\n  out.push({ json: {\n    channel: 'email',\n    message: body.slice(0, 4000),\n    name, email: addr, phone: '', discord_id: '',\n    subject,\n    reply_ref: j.threadId || '',\n    email_message_id: j.id || '',\n    received_at: new Date().toISOString()\n  }});\n}\nreturn out;"
+      },
+      "type": "n8n-nodes-base.code",
+      "typeVersion": 2,
+      "position": [
+        -304,
+        288
+      ],
+      "id": "e7957617-9a60-46fc-bcde-f7b0b4231c5a",
+      "name": "Normalize Email"
+    },
+    {
+      "parameters": {
+        "jsCode": "const b = $input.first().json.body || {};\nconst text = (b.message || '').toString().trim() || '(empty Discord message)';\nreturn [{ json: {\n  channel: 'discord',\n  message: text.slice(0, 4000),\n  name: (b.username || '').toString().trim(),\n  email: '',\n  phone: '',\n  discord_id: (b.discord_id || '').toString().trim(),\n  subject: '',\n  reply_ref: (b.channel_id || '').toString(),\n  email_message_id: (b.message_id || '').toString(),\n  received_at: new Date().toISOString()\n}}];"
+      },
+      "type": "n8n-nodes-base.code",
+      "typeVersion": 2,
+      "position": [
+        -304,
+        480
+      ],
+      "id": "03a58d33-9614-4e71-8413-3fc44614f12c",
+      "name": "Normalize Discord"
+    },
+    {
+      "parameters": {},
+      "type": "n8n-nodes-base.noOp",
+      "typeVersion": 1,
+      "position": [
+        -80,
+        288
+      ],
+      "id": "c04fcdd5-e229-42fb-8e59-73d5a31e732f",
+      "name": "Unified Message"
+    },
+    {
+      "parameters": {
+        "documentId": {
+          "__rl": true,
+          "value": "1Bj9ZHO0HLGfeGWP73C4Ea0XDsRoTUi5MohkOgVhvdkM",
+          "mode": "list",
+          "cachedResultName": "Haven_CRM_Sample_Data",
+          "cachedResultUrl": "https://docs.google.com/spreadsheets/d/1Bj9ZHO0HLGfeGWP73C4Ea0XDsRoTUi5MohkOgVhvdkM/edit?usp=drivesdk"
+        },
+        "sheetName": {
+          "__rl": true,
+          "value": 468120427,
+          "mode": "list",
+          "cachedResultName": "Customers",
+          "cachedResultUrl": "https://docs.google.com/spreadsheets/d/1Bj9ZHO0HLGfeGWP73C4Ea0XDsRoTUi5MohkOgVhvdkM/edit#gid=468120427"
+        },
+        "options": {}
+      },
+      "type": "n8n-nodes-base.googleSheets",
+      "typeVersion": 4.5,
+      "position": [
+        144,
+        288
+      ],
+      "id": "bd5400cc-65f4-4311-b81c-770cc567bd35",
+      "name": "Get Customers",
+      "alwaysOutputData": true,
+      "credentials": {
+        "googleSheetsOAuth2Api": {
+          "id": "SQOPFNuQ2VTtCWEa",
+          "name": "Google Sheets account 2"
+        }
+      }
+    },
+    {
+      "parameters": {
+        "jsCode": "// ---- Unified identity resolution WITH duplicate merging (replaces the code in the \"Resolve Identity\" node) ----\nconst msg = $('Unified Message').first().json;\nconst rows = $input.all().map(i => i.json).filter(r => r && r.customer_id);\n\nconst normEmail = e => (e || '').toString().trim().toLowerCase();\nconst normPhone = p => { const d = (p || '').toString().replace(/\\D/g, ''); return d.length >= 7 ? d.slice(-10) : ''; };\nconst same = (a, b) => String(a || '').trim() !== '' && String(a).trim() === String(b || '').trim();\n\n// contact details typed inside the message (\"my email is ...\")\nconst emailInText = (msg.message.match(/[A-Za-z0-9._%+-]+@[A-Za-z0-9.-]+\\.[A-Za-z]{2,}/) || [])[0] || '';\nconst phoneInText = (msg.message.match(/\\+?\\d[\\d\\s().-]{8,}\\d/g) || [])\n  .find(p => { const n = p.replace(/\\D/g, ''); return n.length >= 10 && n.length <= 15; }) || '';\n\nconst incoming = {\n  email: normEmail(msg.email || emailInText),\n  phone: (msg.phone || phoneInText || '').toString().trim(),\n  discord_id: (msg.discord_id || '').toString().trim(),\n  web_session_id: msg.channel === 'website' ? (msg.reply_ref || '') : ''\n};\n\n// ---- find EVERY row that belongs to this person (any identifier), ignoring rows already merged ----\nconst isMatch = r =>\n  (incoming.email && normEmail(r.email) === incoming.email) ||\n  (normPhone(incoming.phone) && normPhone(r.phone) === normPhone(incoming.phone)) ||\n  (incoming.discord_id && same(r.discord_id, incoming.discord_id)) ||\n  (incoming.web_session_id && same(r.web_session_id, incoming.web_session_id));\nconst live = rows.filter(r => !/^MERGED/i.test(String(r.lead_status || '')) && isMatch(r))\n  .sort((a, b) => String(a.created_at || '').localeCompare(String(b.created_at || '')));   // oldest first\n\nconst primary = live[0] || null;          // the oldest profile survives\nconst duplicates = live.slice(1);         // any other rows for the same person get merged into it\n\nlet matchedBy = 'none';\nif (primary) {\n  if (incoming.email && normEmail(primary.email) === incoming.email) matchedBy = 'email';\n  else if (normPhone(incoming.phone) && normPhone(primary.phone) === normPhone(incoming.phone)) matchedBy = 'phone';\n  else if (incoming.discord_id && same(primary.discord_id, incoming.discord_id)) matchedBy = 'discord_id';\n  else matchedBy = 'web_session';\n  if (duplicates.length) matchedBy += ' (+' + duplicates.length + ' duplicate merged)';\n}\n\nconst now = new Date().toISOString();\nconst base = primary ? { ...primary } : {\n  customer_id: 'HRE-' + Date.now().toString(36).toUpperCase(),\n  name: '', email: '', phone: '', discord_id: '', web_session_id: '',\n  channels_used: '', first_channel: msg.channel, last_channel: msg.channel,\n  transaction_type: '', property_type: '', budget: '', preferred_neighborhoods: '', bedrooms: '',\n  timeline: '', financing_status: '', lead_status: 'New', lead_score: 0,\n  interested_listings: '', assigned_broker: '', conversation_summary: '',\n  created_at: now, last_contact: now\n};\n\n// ---- merge each duplicate into the surviving profile (fill blanks only, combine lists) ----\nconst blank = v => String(v === undefined || v === null ? '' : v).trim() === '';\nconst fillFields = ['name','email','phone','discord_id','web_session_id','transaction_type','property_type','budget',\n  'preferred_neighborhoods','bedrooms','timeline','financing_status','assigned_broker','conversation_summary'];\nconst channels = new Set(String(base.channels_used || '').split(',').map(s => s.trim()).filter(Boolean));\nconst listings = new Set(String(base.interested_listings || '').split(',').map(s => s.trim()).filter(Boolean));\nfor (const d of duplicates) {\n  for (const f of fillFields) if (blank(base[f]) && !blank(d[f])) base[f] = d[f];\n  String(d.channels_used || '').split(',').map(s => s.trim()).filter(Boolean).forEach(c => channels.add(c));\n  String(d.interested_listings || '').split(',').map(s => s.trim()).filter(Boolean).forEach(l => listings.add(l));\n  base.lead_score = Math.max(Number(base.lead_score) || 0, Number(d.lead_score) || 0);\n  if (/^Hot/i.test(String(d.lead_status || '')) && !/^Hot/i.test(String(base.lead_status || ''))) base.lead_status = d.lead_status;\n}\nbase.interested_listings = [...listings].join(', ');\n\n// ---- fill gaps from the incoming message (never overwrite data already on file) ----\nif (blank(base.name) && msg.name) base.name = msg.name;\nif (blank(base.email) && incoming.email) base.email = incoming.email;\nif (blank(base.phone) && incoming.phone) base.phone = incoming.phone;\nif (blank(base.discord_id) && incoming.discord_id) base.discord_id = incoming.discord_id;\nif (blank(base.web_session_id) && incoming.web_session_id) base.web_session_id = incoming.web_session_id;\n\nchannels.add(msg.channel);\nbase.channels_used = [...channels].join(', ');\nbase.last_channel = msg.channel;\nbase.last_contact = now;\n\nreturn [{ json: {\n  customer: base,\n  is_new: !primary,\n  matched_by: matchedBy,\n  message: msg,\n  duplicates: duplicates.map(d => ({ customer_id: d.customer_id, merged_into: base.customer_id }))\n} }];"
+      },
+      "type": "n8n-nodes-base.code",
+      "typeVersion": 2,
+      "position": [
+        368,
+        288
+      ],
+      "id": "3c9b9b5b-f4f1-4192-ac36-ac02c2b08504",
+      "name": "Resolve Identity"
+    },
+    {
+      "parameters": {
+        "jsCode": "// Runs AFTER the surviving profile has been saved. One item per duplicate row that must be deleted (zero items = nothing to do).\nconst d = $('Resolve Identity').first().json.duplicates || [];\nreturn d.map(x => ({ json: x }));\n"
+      },
+      "type": "n8n-nodes-base.code",
+      "typeVersion": 2,
+      "position": [
+        816,
+        144
+      ],
+      "id": "5b0fbb47-3f59-4f7d-94c2-dd6dae2c983b",
+      "name": "List Duplicates"
+    },
+    {
+      "parameters": {
+        "documentId": {
+          "__rl": true,
+          "value": "1Bj9ZHO0HLGfeGWP73C4Ea0XDsRoTUi5MohkOgVhvdkM",
+          "mode": "list",
+          "cachedResultName": "Haven_CRM_Sample_Data",
+          "cachedResultUrl": "https://docs.google.com/spreadsheets/d/1Bj9ZHO0HLGfeGWP73C4Ea0XDsRoTUi5MohkOgVhvdkM/edit?usp=drivesdk"
+        },
+        "sheetName": {
+          "__rl": true,
+          "value": "Customers",
+          "mode": "name"
+        },
+        "filtersUI": {
+          "values": [
+            {
+              "lookupColumn": "customer_id",
+              "lookupValue": "={{ $json.customer_id }}"
+            }
+          ]
+        },
+        "options": {}
+      },
+      "type": "n8n-nodes-base.googleSheets",
+      "typeVersion": 4.5,
+      "position": [
+        1040,
+        144
+      ],
+      "id": "38612aae-c17f-4777-bc02-3d01fb9f4531",
+      "name": "Find Duplicate Row",
+      "credentials": {
+        "googleSheetsOAuth2Api": {
+          "id": "SQOPFNuQ2VTtCWEa",
+          "name": "Google Sheets account 2"
+        }
+      }
+    },
+    {
+      "parameters": {
+        "jsCode": "// delete from the bottom up so earlier row numbers stay valid\nreturn $input.all().sort((a, b) => Number(b.json.row_number) - Number(a.json.row_number));"
+      },
+      "type": "n8n-nodes-base.code",
+      "typeVersion": 2,
+      "position": [
+        1264,
+        144
+      ],
+      "id": "860deef5-e5b5-4de0-9c07-92417aa2d46d",
+      "name": "Sort Rows Bottom First"
+    },
+    {
+      "parameters": {
+        "operation": "delete",
+        "documentId": {
+          "__rl": true,
+          "value": "1Bj9ZHO0HLGfeGWP73C4Ea0XDsRoTUi5MohkOgVhvdkM",
+          "mode": "list",
+          "cachedResultName": "Haven_CRM_Sample_Data",
+          "cachedResultUrl": "https://docs.google.com/spreadsheets/d/1Bj9ZHO0HLGfeGWP73C4Ea0XDsRoTUi5MohkOgVhvdkM/edit?usp=drivesdk"
+        },
+        "sheetName": {
+          "__rl": true,
+          "value": "Customers",
+          "mode": "name"
+        },
+        "startIndex": "={{ $json.row_number }}"
+      },
+      "type": "n8n-nodes-base.googleSheets",
+      "typeVersion": 4.5,
+      "position": [
+        1488,
+        144
+      ],
+      "id": "d534edb2-dd4b-41cc-8036-a04e727ac384",
+      "name": "Delete Duplicate Row",
+      "credentials": {
+        "googleSheetsOAuth2Api": {
+          "id": "SQOPFNuQ2VTtCWEa",
+          "name": "Google Sheets account 2"
+        }
+      },
+      "onError": "continueRegularOutput"
+    }
+  ],
+  "pinData": {},
+  "connections": {
+    "Upsert Customer": {
+      "main": [
+        [
+          {
+            "node": "Get Knowledge Base",
+            "type": "main",
+            "index": 0
+          },
+          {
+            "node": "List Duplicates",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "Get Knowledge Base": {
+      "main": [
+        [
+          {
+            "node": "Build Agent Context",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "Build Agent Context": {
+      "main": [
+        [
+          {
+            "node": "Haven AI Agent",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "Haven AI Agent": {
+      "main": [
+        [
+          {
+            "node": "Parse AI Output",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "Gemini Chat Model": {
+      "ai_languageModel": [
+        [
+          {
+            "node": "Haven AI Agent",
+            "type": "ai_languageModel",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "Customer Memory": {
+      "ai_memory": [
+        [
+          {
+            "node": "Haven AI Agent",
+            "type": "ai_memory",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "Search Listings": {
+      "ai_tool": [
+        [
+          {
+            "node": "Haven AI Agent",
+            "type": "ai_tool",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "Parse AI Output": {
+      "main": [
+        [
+          {
+            "node": "Update Customer Profile",
+            "type": "main",
+            "index": 0
+          },
+          {
+            "node": "Needs Broker?",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "Update Customer Profile": {
+      "main": [
+        [
+          {
+            "node": "Log Conversation",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "Log Conversation": {
+      "main": [
+        [
+          {
+            "node": "Route by Channel",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "Route by Channel": {
+      "main": [
+        [
+          {
+            "node": "Respond Website",
+            "type": "main",
+            "index": 0
+          }
+        ],
+        [
+          {
+            "node": "Send Email Reply",
+            "type": "main",
+            "index": 0
+          }
+        ],
+        [
+          {
+            "node": "Respond Discord",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "Needs Broker?": {
+      "main": [
+        [
+          {
+            "node": "Log Handoff",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "Log Handoff": {
+      "main": [
+        [
+          {
+            "node": "Notify Broker",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "Website Chat Webhook": {
+      "main": [
+        [
+          {
+            "node": "Normalize Website",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "Email Trigger (Gmail)": {
+      "main": [
+        [
+          {
+            "node": "Normalize Email",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "Discord Webhook": {
+      "main": [
+        [
+          {
+            "node": "Normalize Discord",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "Normalize Website": {
+      "main": [
+        [
+          {
+            "node": "Unified Message",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "Normalize Email": {
+      "main": [
+        [
+          {
+            "node": "Unified Message",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "Normalize Discord": {
+      "main": [
+        [
+          {
+            "node": "Unified Message",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "Unified Message": {
+      "main": [
+        [
+          {
+            "node": "Get Customers",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "Get Customers": {
+      "main": [
+        [
+          {
+            "node": "Resolve Identity",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "Resolve Identity": {
+      "main": [
+        [
+          {
+            "node": "Upsert Customer",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "List Duplicates": {
+      "main": [
+        [
+          {
+            "node": "Find Duplicate Row",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "Find Duplicate Row": {
+      "main": [
+        [
+          {
+            "node": "Sort Rows Bottom First",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "Sort Rows Bottom First": {
+      "main": [
+        [
+          {
+            "node": "Delete Duplicate Row",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    }
+  },
+  "active": false,
+  "settings": {
+    "executionOrder": "v1",
+    "binaryMode": "separate"
+  },
+  "versionId": "3870f6fb-af33-409a-a772-374856d2ec0b",
+  "meta": {
+    "templateCredsSetupCompleted": true,
+    "instanceId": "02d81440eb4d80cfc5b0ed16a6c35031c2dd9739aacd5bd2a7de6f6881dfda45"
+  },
+  "nodeGroups": [],
+  "id": "IUZ7cGEeytNXpV4x",
+  "tags": []
+}
