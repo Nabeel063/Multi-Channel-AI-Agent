@@ -1,25 +1,14 @@
 services:
-  caddy:
-    image: caddy:2-alpine
-    restart: unless-stopped
-    ports:
-      - "80:80"
-      - "443:443"
-    volumes:
-      - ./Caddyfile:/etc/caddy/Caddyfile:ro
-      - caddy_data:/data
-      - caddy_config:/config
-    networks:
-      - haven-net
-
   n8n:
     image: docker.n8n.io/n8nio/n8n:latest
     restart: unless-stopped
+    ports:
+      - "5678:5678"
     environment:
-      - N8N_HOST=${DOMAIN_NAME:-localhost}
+      - N8N_HOST=0.0.0.0
       - N8N_PORT=5678
-      - N8N_PROTOCOL=${PROTOCOL:-https}
-      - WEBHOOK_URL=${WEBHOOK_URL:-https://${DOMAIN_NAME:-localhost}/}
+      - N8N_PROTOCOL=${PROTOCOL:-http}
+      - WEBHOOK_URL=${WEBHOOK_URL:-http://${DOMAIN_NAME:-localhost}:5678/}
       - GENERIC_TIMEZONE=${TIMEZONE:-UTC}
       - N8N_ENFORCE_SETTINGS_FILE_PERMISSIONS=true
     volumes:
@@ -39,8 +28,6 @@ services:
       - haven-net
 
 volumes:
-  caddy_data:
-  caddy_config:
   n8n_data:
 
 networks:
