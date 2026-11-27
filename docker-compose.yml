@@ -11,6 +11,7 @@ services:
       - WEBHOOK_URL=${WEBHOOK_URL:-http://${DOMAIN_NAME:-localhost}:5678/}
       - GENERIC_TIMEZONE=${TIMEZONE:-UTC}
       - N8N_ENFORCE_SETTINGS_FILE_PERMISSIONS=true
+      - N8N_SECURE_COOKIE=false
     volumes:
       - n8n_data:/home/node/.n8n
     networks:
