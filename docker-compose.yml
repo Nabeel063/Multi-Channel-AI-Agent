@@ -1,0 +1,48 @@
+services:
+  caddy:
+    image: caddy:2-alpine
+    restart: unless-stopped
+    ports:
+      - "80:80"
+      - "443:443"
+    volumes:
+      - ./Caddyfile:/etc/caddy/Caddyfile:ro
+      - caddy_data:/data
+      - caddy_config:/config
+    networks:
+      - haven-net
+
+  n8n:
+    image: docker.n8n.io/n8nio/n8n:latest
+    restart: unless-stopped
+    environment:
+      - N8N_HOST=${DOMAIN_NAME:-localhost}
+      - N8N_PORT=5678
+      - N8N_PROTOCOL=${PROTOCOL:-https}
+      - WEBHOOK_URL=${WEBHOOK_URL:-https://${DOMAIN_NAME:-localhost}/}
+      - GENERIC_TIMEZONE=${TIMEZONE:-UTC}
+      - N8N_ENFORCE_SETTINGS_FILE_PERMISSIONS=true
+    volumes:
+      - n8n_data:/home/node/.n8n
+    networks:
+      - haven-net
+
+  discord-relay:
+    build: ./channels
+    restart: unless-stopped
+    environment:
+      - DISCORD_BOT_TOKEN=${DISCORD_BOT_TOKEN:-}
+      - N8N_WEBHOOK_URL=http://n8n:5678/webhook/haven-discord
+    depends_on:
+      - n8n
+    networks:
+      - haven-net
+
+volumes:
+  caddy_data:
+  caddy_config:
+  n8n_data:
+
+networks:
+  haven-net:
+    driver: bridge

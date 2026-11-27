@@ -1,0 +1,12 @@
+{
+  "name": "haven-discord-relay",
+  "version": "1.0.0",
+  "description": "Discord relay bot forwarding messages to Haven n8n webhook",
+  "main": "discord-relay-bot.js",
+  "scripts": {
+    "start": "node discord-relay-bot.js"
+  },
+  "dependencies": {
+    "discord.js": "^14.16.3"
+  }
+}

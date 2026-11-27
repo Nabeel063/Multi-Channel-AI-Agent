@@ -1,0 +1,6 @@
+listing_id,title,neighborhood,price,bedrooms,bathrooms,features,listing_type,status,image_url
+LST-101,Modern High-Rise Condo,Downtown,"$580,000",2,2,"Balcony, city skyline view, in-unit laundry, gym access",Sale,Available,https://images.unsplash.com/photo-1545324418-cc1a3fa10c00?w=800
+LST-102,Spacious Family Home,Oakridge,"$820,000",4,3,"Large backyard, 2-car garage, renovated open kitchen",Sale,Available,https://images.unsplash.com/photo-1580587771525-78b9dba3b914?w=800
+LST-103,Chic Urban Loft,West End,"$3,200/mo",1,1,"Exposed brick, 14ft ceilings, pet friendly, elevator",Rent,Available,https://images.unsplash.com/photo-1502672260266-1c1ef2d93688?w=800
+LST-104,Cozy Suburban Townhouse,Greenfield,"$2,600/mo",3,2.5,"Private patio, community pool, near top-rated schools",Rent,Available,https://images.unsplash.com/photo-1512917774080-9991f1c4c750?w=800
+LST-105,Luxury Waterfront Penthouse,Marina Bay,"$1,450,000",3,3.5,"Private rooftop terrace, panoramic ocean view, 24/7 concierge",Sale,Available,https://images.unsplash.com/photo-1600585154340-be6161a56a0c?w=800

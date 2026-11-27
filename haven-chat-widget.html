@@ -36,8 +36,9 @@
   <form id="f"><input id="msg" placeholder="Type your message..." autocomplete="off"><button>Send</button></form>
 </div>
 <script>
-  // Paste your n8n webhook URL here (use /webhook-test/... while testing, /webhook/... once the workflow is active)
-  const WEBHOOK_URL = 'http://localhost:5678/webhook-test/haven-website-chat';
+  // Paste your n8n webhook URL here or pass ?webhook=https://... in the browser URL
+  const urlParams = new URLSearchParams(window.location.search);
+  const WEBHOOK_URL = urlParams.get('webhook') || window.HAVEN_WEBHOOK_URL || 'http://localhost:5678/webhook-test/haven-website-chat';
 
   let sid = null;
   try { sid = localStorage.getItem('haven_sid'); } catch (e) {}

@@ -1,0 +1,6 @@
+# Replace with your actual domain or leave {$DOMAIN_NAME} if passed in environment
+{$DOMAIN_NAME:localhost} {
+    reverse_proxy n8n:5678 {
+        flush_interval -1
+    }
+}
